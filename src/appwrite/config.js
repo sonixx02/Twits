@@ -127,7 +127,7 @@ export class Service{
     getFilePreview(fileId) {
         if (!fileId) {
             console.error("Appwrite service :: getFilePreview :: Missing fileId");
-            return ''; // or handle the absence of fileId appropriately
+            return ''; 
         }
         return this.bucket.getFilePreview(conf.appwriteBucketId, fileId);
     }
